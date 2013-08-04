@@ -1,0 +1,24 @@
+CACHE MANIFEST
+# Timestamp: 123
+
+# Explicitly cached 'master entries'.
+CACHE:
+
+# Images
+# content will go here
+
+# Internal HTML documents
+# content will go here
+
+# Style Sheets
+# content will go here
+
+# JavaScript
+# content will go here
+
+# Resources that require the user to be online.
+NETWORK:
+*
+
+FALLBACK:
+/ /offline.html
