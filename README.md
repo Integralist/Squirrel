@@ -6,8 +6,8 @@ PhantomJS script to automate Application Cache manifest file generation
 
 ## Installation
 
-`brew install phantomjs`
-'brew install node'
+`brew install phantomjs`  
+`brew install node`
 
 If you're not using [Homebrew](http://brew.sh/) you can install Node using [Nave](https://github.com/isaacs/nave#nave) and PhantomJS using [NPM](https://npmjs.org/package/phantomjs)
 
