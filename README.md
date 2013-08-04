@@ -2,6 +2,8 @@
 
 PhantomJS script to automate Application Cache manifest file generation
 
+![](https://f.cloud.github.com/assets/180050/824529/9f850cd8-f049-11e2-970f-7461128cfe84.gif)
+
 ## Installation
 
 `brew install phantomjs`
