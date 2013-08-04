@@ -16,9 +16,7 @@ var _          = require('lodash'),
 function getLinks(){
     var results = page.evaluate(function(){
         return Array.prototype.slice.call(document.getElementsByTagName('a')).map(function (item) {
-            return item.href.replace(/.+\/test-site(\/.+)$/i, function (match, cg) {
-                return cg;
-            });
+            return item.href;
         });
     });
 
