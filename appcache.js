@@ -6,9 +6,6 @@ var _          = require('lodash'),
     path       = './appcache.manifest',
     manifest   = fs.read(path),
     css        = [],
-    jpgs       = [],
-    pngs       = [],
-    gifs       = [],
     images     = [],
     javascript = [],
     links, url;
@@ -81,22 +78,8 @@ page.onResourceReceived = function (request) {
             javascript.push(request.url);
         }
 
-        if (request.contentType.indexOf('image/png') !== -1) {
-            if (request.url.indexOf('data:image') === -1) {
-                pngs.push(request.url);
-            }
-        }
-
-        if (request.contentType.indexOf('image/jpeg') !== -1) {
-            if (request.url.indexOf('data:image') === -1) {
-                jpgs.push(request.url);
-            }
-        }
-
-        if (request.contentType.indexOf('image/gif') !== -1) {
-            if (request.url.indexOf('data:image') === -1) {
-                gifs.push(request.url);
-            }
+        if (/image\/(?:png|jpeg|gif)/i.test(request.contentType) && request.url.indexOf('data:image') === -1) {
+            images.push(request.url);
         }
     }
 };
@@ -132,7 +115,7 @@ page.open(url, function (status) {
     links = getLinks();
     
     links      = _.unique(links);
-    images     = _.unique(pngs.concat(jpgs).concat(gifs));
+    images     = _.unique(images);
     css        = _.unique(css);
     javascript = _.unique(javascript);
 
