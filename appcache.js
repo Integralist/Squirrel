@@ -63,24 +63,16 @@ function bbcNews(){
 }
 
 page.onResourceRequested = function (request) {
-    // console.log('Request ' + JSON.stringify(request, undefined, 4));
-};
+    if (/\.(?:png|jpeg|jpg|gif)$/i.test(request.url)) {
+        images.push(request.url);
+    }
 
-page.onResourceReceived = function (request) {
-    // Some requests can have `contentType = null` which causes errors if we don't check for truthy value
-    if (request.contentType) {
-        if (request.contentType.indexOf('text/css') !== -1) {
-            css.push(request.url);
-        }
-        
-        // application/javascript & application/x-javascript
-        if (request.contentType.indexOf('javascript') !== -1) {
-            javascript.push(request.url);
-        }
+    if (/\.(?:js)$/i.test(request.url)) {
+        javascript.push(request.url);
+    }
 
-        if (/image\/(?:png|jpeg|gif)/i.test(request.contentType) && request.url.indexOf('data:image') === -1) {
-            images.push(request.url);
-        }
+    if (/\.(?:css)$/i.test(request.url)) {
+        css.push(request.url);
     }
 };
 
