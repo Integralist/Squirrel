@@ -101,11 +101,13 @@ if (bbcNews()) {
     });
 }
 
+page.viewportSize = { width: 1920, height: 800 };
+
 page.open(url, function (status) {
     console.log('');
 
     links = getLinks();
-    
+
     links      = _.unique(links);
     images     = _.unique(images);
     css        = _.unique(css);
