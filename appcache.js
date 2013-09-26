@@ -77,10 +77,10 @@ page.onResourceRequested = function (request) {
 };
 
 page.onError = function (msg, trace) {
-    console.log(msg);
+    console.log('Error :', msg);
 
     trace.forEach(function (item) {
-        console.log('  ', item.file, ':', item.line);
+        console.log('Trace:  ', item.file, ':', item.line);
     });
 }
 
