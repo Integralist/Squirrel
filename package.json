@@ -26,10 +26,7 @@
     "phantomjs",
     "cli"
   ],
-  "author": {
-    "name": "Mark McDonnell",
-    "email": "mark.mcdx@gmail.com"
-  },
+  "author": "Mark McDonnell <mark.mcdx@gmail.com> (http://www.integralist.co.uk/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Integralist/Squirrel/issues"
