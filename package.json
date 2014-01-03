@@ -1,0 +1,38 @@
+{
+  "name": "Squirrel",
+  "version": "0.1.0",
+  "description": "Node based cli tool using PhantomJS to automate generation of an Application Cache manifest file for a specified URL",
+  "main": "lib/squirrel",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Integralist/Squirrel.git"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "squirrel": "lib/squirrel.js"
+  },
+  "dependencies": {
+    "phantomjs": "~1.9.2-6",
+    "lodash.uniq": "~2.4.1"
+  },
+  "keywords": [
+    "appcache",
+    "phantomjs",
+    "cli"
+  ],
+  "author": {
+    "name": "Mark McDonnell",
+    "email": "mark.mcdx@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Integralist/Squirrel/issues"
+  },
+  "homepage": "https://github.com/Integralist/Squirrel"
+}

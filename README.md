@@ -1,24 +1,27 @@
 # Squirrel
 
-PhantomJS script to automate Application Cache manifest file generation
+Node based cli tool using PhantomJS to automate generation of an Application Cache manifest file for a specified URL
 
-![](https://f.cloud.github.com/assets/180050/824529/9f850cd8-f049-11e2-970f-7461128cfe84.gif)
+## Requirements
+
+You'll need Node.js installed...
+
+`brew install node`
+
+If you're not using [Homebrew](http://brew.sh/) you can install Node using [Nave](https://github.com/isaacs/nave#nave)
 
 ## Installation
 
-`brew install phantomjs`
-`brew install node`
-
-If you're not using [Homebrew](http://brew.sh/) you can install Node using [Nave](https://github.com/isaacs/nave#nave) and PhantomJS using [NPM](https://npmjs.org/package/phantomjs)
+`npm install -g squirrel`
 
 ## Usage
 
-`phantomjs appcache.js [url]`
+`squirrel [url]`
 
 ## Example
 
-`phantomjs appcache.js bbc.co.uk/news`
+`squirrel bbc.co.uk/news`
 
 ## Output
 
-I include a generic `appcache.manifest` which has no content but is needed for the PhantomJS script to parse
+Creates a `appcache.manifest` file in the current directory you run the command.
