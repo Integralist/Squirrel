@@ -2,6 +2,12 @@
 
 Node based cli tool using PhantomJS to automate generation of an Application Cache manifest file for a specified URL
 
+## IMPORTANT!
+
+I'm just waiting for this module to be published to https://npmjs.org/ as there
+are currently authentication issues I'm waiting to be resolved. Check back soon
+and hopefully it'll be online by then!
+
 ## Requirements
 
 You'll need Node.js installed...
