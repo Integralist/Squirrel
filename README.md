@@ -18,7 +18,7 @@ If you're not using [Homebrew](http://brew.sh/) you can install Node using [Nave
 
 ## Installation
 
-`npm install -g squirrel`
+`npm install -g squirrel-js`
 
 ## Usage
 
