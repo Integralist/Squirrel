@@ -1,6 +1,6 @@
 {
   "name": "squirrel-js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Node based cli tool using PhantomJS to automate generation of an Application Cache manifest file for a specified URL",
   "main": "lib/squirrel",
   "scripts": {
